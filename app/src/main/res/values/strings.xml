@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidNative</string>
+    <string name="app_name_internal">Internal_test_5G</string>
+    <string name="start">Start Flutter</string>
+</resources>
