@@ -122,7 +122,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFlutterFragment() {
-        val newFlutterFragment: FlutterFragment = FlutterFragment.withCachedEngine(App.FLUTTER_ENGINE_ID).build()
+        val newFlutterFragment: FlutterFragment = FlutterFragment.withCachedEngine(App.FLUTTER_ENGINE_ID)
+            .shouldAutomaticallyHandleOnBackPressed(true).build()
         val fragmentManager: FragmentManager = supportFragmentManager
         fragmentManager.beginTransaction().add(R.id.frame, newFlutterFragment).commit()
     }
